@@ -1,150 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INNOVEST DESIGN SOLUTION PRIVATE LIMITED</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f7f7f7;
-      color: #333;
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fff; color: #333; }
+    header, section, footer { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    nav { background: #0a0a23; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    .hero { background: url('https://via.placeholder.com/1600x600') no-repeat center/cover; color: white; text-align: center; padding: 100px 20px; position: relative; }
+    .hero-logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px;
     }
-    header {
-      background-color: #0a0a23;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      background: #141414;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services, .portfolio {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .card {
-      flex: 1 1 300px;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background-color: #0a0a23;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    footer {
-      background: #0a0a23;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.3rem; }
+    .section-title { font-size: 2rem; margin-bottom: 20px; text-align: center; }
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card { flex: 1 1 300px; background: #f7f7f7; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .card h3 { margin-top: 0; }
+    footer { background: #0a0a23; color: white; text-align: center; padding: 40px 20px; }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>INNOVEST DESIGN SOLUTION PRIVATE LIMITED</h1>
-  <p>Architectural Design | Planning | BIM Solutions</p>
-</header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#portfolio">Portfolio</a>
+  <a href="#insights">Insights</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<header class="hero">
+  <img src="innovest_logo.JPG" alt="Innovest Logo" class="hero-logo">
+  <h1>INNOVEST DESIGN SOLUTION</h1>
+  <p>Building spaces that inspire—Innovative, Sustainable, Client‑Focused</p>
+</header>
+
 <section id="about">
-  <h2>About Us</h2>
-  <p>INNOVEST Design Solution is a leading architecture and BIM services firm offering innovative, sustainable, and client-focused design solutions. Our mission is to create spaces that inspire, perform, and enhance the built environment.</p>
+  <h2 class="section-title">About Us</h2>
+  <p>INNOVEST DESIGN SOLUTION PRIVATE LIMITED is a multidisciplinary architecture and BIM services firm. We believe in delivering sustainable, modern, and efficient solutions tailored to our clients’ needs.</p>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="cards">
     <div class="card">
       <h3>Architectural Design</h3>
-      <p>Creative, functional, and sustainable building designs tailored to your needs.</p>
+      <p>Creative and functional designs customized to your vision and site context.</p>
     </div>
     <div class="card">
-      <h3>BIM Modeling</h3>
-      <p>Efficient 3D models and documentation for better coordination and project delivery.</p>
+      <h3>BIM Modeling & Coordination</h3>
+      <p>Precision BIM solutions for seamless design development and construction documentation.</p>
     </div>
     <div class="card">
       <h3>Interior Design</h3>
-      <p>Modern and elegant interior spaces that reflect personality and purpose.</p>
+      <p>Modern, elegant interiors that reflect your brand and lifestyle.</p>
     </div>
   </div>
 </section>
 
 <section id="portfolio">
-  <h2>Our Projects</h2>
-  <div class="portfolio">
+  <h2 class="section-title">Our Portfolio</h2>
+  <div class="cards">
     <div class="card">
-      <h4>Modern Villa</h4>
-      <p>Elegant design with open spaces and green integration.</p>
+      <h3>Modern Villa</h3>
+      <p>A luxury residential design with a focus on light, form, and outdoor integration.</p>
     </div>
     <div class="card">
-      <h4>Commercial Complex</h4>
-      <p>Innovative planning for business hubs and retail spaces.</p>
+      <h3>Commercial Complex</h3>
+      <p>Efficient planning and modern aesthetics for a commercial building in the city core.</p>
     </div>
     <div class="card">
-      <h4>Residential Apartments</h4>
-      <p>Smart layouts with high livability and urban aesthetics.</p>
+      <h3>Urban Apartments</h3>
+      <p>Smart, compact housing solutions designed for livability and sustainability.</p>
     </div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required/>
-    <input type="email" name="email" placeholder="Your Email" required/>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<section id="insights">
+  <h2 class="section-title">Insights</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>5 BIM Trends in 2025</h3>
+      <p>Explore emerging BIM workflows and technologies shaping the future of architecture.</p>
+    </div>
+    <div class="card">
+      <h3>Designing for Climate</h3>
+      <p>How we approach sustainable architecture in extreme environments.</p>
+    </div>
+    <div class="card">
+      <h3>Client-Centered Spaces</h3>
+      <p>Why collaboration is key to user-focused architectural success.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 INNOVEST DESIGN SOLUTION PRIVATE LIMITED. All rights reserved.</p>
+<footer id="contact">
+  <p>&copy; 2025 INNOVEST DESIGN SOLUTION PRIVATE LIMITED | All rights reserved.</p>
+  <p>Email: <a href="mailto:innovestdesignsolution@gmail.com" style="color: #ccc;">innovestdesignsolution@gmail.com</a> | Phone: +92 335 9801109</p>
 </footer>
 
 </body>
